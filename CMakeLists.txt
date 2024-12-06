@@ -6,10 +6,10 @@ project(omgpp-cpp
 )
 set(CMAKE_CXX_STANDARD 20)
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
-add_subdirectory(src)
-
-add_library(omgpp STATIC
-    ${LIBRARY_SOURCES}
+find_library(OMGPP_LIB_PATH
+    client_server
+    PATHS external
 )
+
+add_subdirectory(client)
+add_subdirectory(server)

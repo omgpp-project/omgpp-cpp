@@ -1,0 +1,5 @@
+project(server)
+
+add_library(omgpp-server STATIC
+)
+target_link_libraries(omgpp-server client_server)

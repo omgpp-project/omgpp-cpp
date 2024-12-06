@@ -1,4 +1,0 @@
-set(LIBRARY_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/omgpp.cpp
-    PARENT_SCOPE
-)
